@@ -29,6 +29,10 @@ h2{
     text-decoration: underline;
 }
 
+body{
+  background-color: var(--dark-color);
+}
+
 /*navbar style start*/
 header{
     position: relative;
@@ -68,6 +72,7 @@ header .navbar a:hover{
 
 body{
     background-color: var(--dark-color);
+    min-height: 110vh;
 }
 
 header .icons i{
@@ -102,7 +107,7 @@ header .icons #menu{
 .video-text{
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    min-height: 85vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -164,6 +169,7 @@ header .icons #menu{
   .video-slide{
     border-radius: 10px;
     position: absolute;
+    padding: 20px;
     width: 100%;
     clip-path: circle(0% at 0 50%);
   }
@@ -218,16 +224,16 @@ header .icons #menu{
 
 /*footer section start*/
 footer{
-  position: relative;
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  border-radius: 10px;
-  background: rgb(220, 170, 196);
+  background: var(--light-color);
   height: auto;
   width: 100%;
   padding-top: 40px;
   color: var(--dark-color);
+  z-index: 9999;
 }
 .footer-content{
   display: flex;

@@ -215,3 +215,50 @@ header .icons #menu{
     border-radius: 10px;
 }
 /*slider style end*/
+
+/*footer section start*/
+footer{
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 10px;
+  background: rgb(220, 170, 196);
+  height: auto;
+  width: 100%;
+  padding-top: 40px;
+  color: var(--dark-color);
+}
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 15px;
+}
+
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li{
+  margin: 0 10px;
+}
+.socials a{
+  text-decoration: none;
+  color: var(--dark-color);
+}
+
+.socials a i{
+  font-size: 3rem;
+  transition: color .4s ease;
+
+}
+.socials a:hover i{
+  color: var(--dark-color);
+}
+/*footer section end*/

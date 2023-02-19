@@ -23,6 +23,7 @@ html{
     font-size: 62.5%;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 h2{
@@ -31,12 +32,14 @@ h2{
 
 body{
   background-color: var(--dark-color);
+  min-height: 100%;
 }
 
 /*navbar style start*/
 header{
     position: relative;
     padding: 10px;
+    height: 12vh;
     margin: 0px;
     background-color: var(--light-color);
     border-radius: 4px;
@@ -141,7 +144,7 @@ header .icons #menu{
   justify-content: center;
   align-items: center;
   transform: translateY(300px);
-  margin-bottom: 12px;
+  margin-bottom: 10vh;
 }
 
 .slider-navigation .nav-btn{
@@ -224,12 +227,12 @@ header .icons #menu{
 
 /*footer section start*/
 footer{
-  position: fixed;
-  bottom: 0;
+  position: absolute;
+  bottom: -12vh;
   left: 0;
   right: 0;
   background: var(--light-color);
-  height: auto;
+  height: 15vh;
   width: 100%;
   padding-top: 40px;
   color: var(--dark-color);
@@ -268,3 +271,133 @@ footer{
   color: var(--dark-color);
 }
 /*footer section end*/
+
+.about{
+  width: 100%;
+  padding: 230px 1em 0 1em;
+  justify-content: space-between;
+}
+
+.about img{
+  height: 700px;
+  width: 520px;
+  border-radius: 10px;
+}
+
+/*about section*/
+.about-text{
+  width: 550px;
+  max-width: 95%;
+  display: block;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.about .btn{
+  width: 12px;
+  height: 12px;
+  background: var(--light-color);
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+  transition: 0.3s ease;
+  color: var(--dark-color);
+  border: 2px solid transparent;
+  font-size: 20px;
+  padding: 13px 30px;
+  border-radius: 10px;
+}
+
+.about .btn:hover{
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  border: .1rem solid var(--dark-color);
+  border-radius: 10px;
+}
+
+.main{
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.main h1{
+  color: var(--light-color);
+  font-size: 80px;
+  margin-bottom: 20px;
+
+}
+
+.main h3{
+  color: var(--light-color);
+  font-size: 30px;
+}
+/*about section end*/
+
+/*menu section start*/
+.flex-container p{
+  font-size: smaller;
+  font-style: italic;
+}
+
+.flex-container h4{
+  font-weight: 600;
+}
+.menu-header{
+  margin-top: 200px;
+  max-width: 100%;
+  display: block;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.menu-header h1{
+  color: var(--light-color);
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.flex-container{
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 55%;
+  border-radius: 10px;
+}
+
+.left{
+  color: var(--light-color);
+  font-size: 20px;
+  flex: 1;
+  text-align: center;
+}
+
+.right{
+  color: var(--light-color);
+  font-size: 20px;
+  flex: 1;
+  text-align: center;
+  padding-top: 75px;
+}
+
+.menu-btn button{
+  background: var(--light-color);
+  color: var(--dark-color);
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 3rem;
+  margin: 20px;
+  position: absolute;
+  right: 40%;
+  width: 20%;
+  text-align: center;
+  cursor: pointer;
+
+}
+/*menu section end*/

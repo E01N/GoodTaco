@@ -24,6 +24,7 @@ html{
     overflow-x: hidden;
     scroll-behavior: smooth;
     height: 100%;
+    background-color: var(--dark-color);
 }
 
 h2{
@@ -144,7 +145,7 @@ header .icons #menu{
   justify-content: center;
   align-items: center;
   transform: translateY(300px);
-  margin-bottom: 10vh;
+  margin-bottom: 15vh;
 }
 
 .slider-navigation .nav-btn{
@@ -225,18 +226,85 @@ header .icons #menu{
 }
 /*slider style end*/
 
-/*footer section start*/
+/*about section start*/
+.about{
+  width: 100%;
+  padding: 90px 1em 20vh 1em;
+  justify-content: space-between;
+  background-color: var(--dark-color);
+}
+
+.about img{
+  height: 700px;
+  width: 520px;
+  border-radius: 10px;
+}
+
+.about-text{
+  width: 550px;
+  max-width: 95%;
+  display: block;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.about .btn{
+  width: 12px;
+  height: 12px;
+  background: var(--light-color);
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+  transition: 0.3s ease;
+  color: var(--dark-color);
+  border: 2px solid transparent;
+  font-size: 20px;
+  padding: 13px 30px;
+  border-radius: 10px;
+}
+
+.about .btn:hover{
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  border: .1rem solid var(--dark-color);
+  border-radius: 10px;
+}
+
+.main{
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.main h1{
+  color: var(--light-color);
+  font-size: 80px;
+  margin-bottom: 20px;
+
+}
+
+.main h3{
+  color: var(--light-color);
+  font-size: 30px;
+}
+/*about section end*/
+
 footer{
-  position: absolute;
-  bottom: -12vh;
+  position: relative;
+  bottom: 0;
   left: 0;
   right: 0;
+  border-radius: 10px 10px 0 0;
   background: var(--light-color);
-  height: 15vh;
+  height: auto;
   width: 100%;
   padding-top: 40px;
   color: var(--dark-color);
-  z-index: 9999;
 }
 .footer-content{
   display: flex;
@@ -272,9 +340,10 @@ footer{
 }
 /*footer section end*/
 
+/*about section*/
 .about{
   width: 100%;
-  padding: 230px 1em 0 1em;
+  padding: 90px 1em 20vh 1em;
   justify-content: space-between;
 }
 
@@ -284,7 +353,6 @@ footer{
   border-radius: 10px;
 }
 
-/*about section*/
 .about-text{
   width: 550px;
   max-width: 95%;
@@ -296,17 +364,19 @@ footer{
 
 .about .btn{
   width: 12px;
-  height: 12px;
-  background: var(--light-color);
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
-  transition: 0.3s ease;
-  color: var(--dark-color);
-  border: 2px solid transparent;
-  font-size: 20px;
-  padding: 13px 30px;
-  border-radius: 10px;
+    margin-top: 10px;
+    height: 12px;
+    background: var(--light-color);
+    border-radius: 50%;
+    min-inline-size: max-content;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgb(255 255 255 / 50%);
+    transition: 0.3s ease;
+    color: var(--dark-color);
+    border: 2px solid transparent;
+    font-size: 20px;
+    padding: 30px 30px;
+    border-radius: 10px;
 }
 
 .about .btn:hover{

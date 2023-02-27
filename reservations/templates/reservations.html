@@ -1,10 +1,15 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 {% load static %}
 
-{% block page_header %}
-    
-{% endblock %}
-
 {% block content %}
-
+  <h1>Available Tables</h1>
+  {% if tables %}
+    <ul>
+      {% for table in tables %}
+        <li><a href="{% url 'reserve_table' table.id %}">Table {{ table.number }}</a></li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>Sorry, there are no tables available at this time.</p>
+  {% endif %}
 {% endblock %}

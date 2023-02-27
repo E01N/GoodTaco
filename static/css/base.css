@@ -474,6 +474,72 @@ footer{
 }
 /*menu section end*/
 
+/* reservation section start */
+.form-container {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.form-control {
+  border-radius: 0;
+}
+
+select[name="table_number"] {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  color: #444;
+  background-color: #fff;
+  width: 100%;
+  max-width: 300px;
+}
+
+select[name="table_number"] option {
+  padding: 8px 12px;
+  font-size: 16px;
+  color: #444;
+  background-color: #fff;
+}
+
+select[name="table_number"]:focus {
+  outline: none;
+  border-color: #5B9DD9;
+  box-shadow: 0 0 3px #5B9DD9;
+}
+
+select.form-select {
+  padding: 8px 16px;
+  background-color: #f2f2f2;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+
+.form-submit {
+  margin-top: 20px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.form-submit:hover {
+  background-color: #0069d9;
+}
+
+/* reservation section start */
+
+
 @media (max-width: 878px){
     .card-img{
         display: none;

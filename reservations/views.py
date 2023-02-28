@@ -5,6 +5,7 @@ from .forms import ReservationForm
 from .models import Reservation, Table
 from django.views.generic import ListView
 from django.views.generic.edit import CreateView
+from django.urls import reverse
 
 
 class ReservationsView(ListView):
@@ -24,6 +25,10 @@ def reservations(request):
     return render(request, 'reservations.html', context)
 
 
+def reservation_confirmed(request):
+    return render(request, 'reservation_confirmed.html')
+
+
 def make_reservation(request):
     if request.method == 'POST':
         form = ReservationForm(request.POST)
@@ -33,10 +38,11 @@ def make_reservation(request):
             table.reservation = reservation
             table.save()
             messages.success(request, 'Your reservation has been booked.')
-            return redirect('home')
+            return redirect(reverse('reservation_confirmed'))
     else:
         form = ReservationForm(initial={'date': timezone.now().date()})
-    return render(request, 'reservation_error.html', {'form': form})
+    return render(request, 'make_reservation.html', {'form': form})
+
 
 
 def cancel_reservation(request, reservation_id):
@@ -48,4 +54,4 @@ def cancel_reservation(request, reservation_id):
         reservation.save()
         messages.success(request, 'Your reservation has been cancelled.')
         return redirect('home')
-    return render(request, 'cancel_reservation.html', {'reservation': reservation})
+    return render(request, 'cancel_reservation.html', {'reservations': reservations})

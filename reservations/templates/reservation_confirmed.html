@@ -2,33 +2,8 @@
 {% load static %}
 
 {% block content %}
-  <h1>Reservation</h1>
-  {% if reservations %}
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Email</th>
-          <th>Phone</th>
-          <th>Guests</th>
-          <th>Date</th>
-          <th>Time</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for reservation in reservations %}
-          <tr>
-            <td>{{ reservation.name }}</td>
-            <td>{{ reservation.email }}</td>
-            <td>{{ reservation.number }}</td>
-            <td>{{ reservation.guests }}</td>
-            <td>{{ reservation.date }}</td>
-            <td>{{ reservation.time }}</td>
-          </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-  {% else %}
-    <p>No reservations found.</p>
-  {% endif %}
+  <h2>Reservation</h2>
+  <h3>Your reservation has been confirmed!</h3>
+  <h3>See you soon</h3>
+  <a href="{% url 'home' %}" class="btn">Back to home</a>
 {% endblock %}

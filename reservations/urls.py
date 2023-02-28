@@ -1,10 +1,11 @@
 from django.urls import path
 from . import views
-
+from .views import make_reservation, cancel_reservation
+from .views import ReservationsView
 
 urlpatterns = [
     path('', views.reservations, name='reservations'),
-    path('', views.reserve_table, name='reserve_table'),
-    path('<int:table_id>/', views.confirm_reservation, name='confirm_reservation'),
-    path('table/<int:table_id>/reserve/', views.reserve_table, name='reserve_table'),
+    path('make-reservation/', make_reservation, name='make_reservation'),
+    path('cancel-reservation/<int:reservation_id>/', cancel_reservation, name='cancel_reservation'),
+    path('reservations/', ReservationsView.as_view(), name='reservations'),
 ]

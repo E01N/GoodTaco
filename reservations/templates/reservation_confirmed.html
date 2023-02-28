@@ -2,6 +2,33 @@
 {% load static %}
 
 {% block content %}
-<h1>Reservation Confirmed</h1>
-<p>You have reserved Table {{ table.number }}.</p>
+  <h1>Reservation</h1>
+  {% if reservations %}
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Guests</th>
+          <th>Date</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for reservation in reservations %}
+          <tr>
+            <td>{{ reservation.name }}</td>
+            <td>{{ reservation.email }}</td>
+            <td>{{ reservation.number }}</td>
+            <td>{{ reservation.guests }}</td>
+            <td>{{ reservation.date }}</td>
+            <td>{{ reservation.time }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% else %}
+    <p>No reservations found.</p>
+  {% endif %}
 {% endblock %}

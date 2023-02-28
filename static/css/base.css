@@ -296,13 +296,14 @@ header .icons #menu{
 }
 /*about section end*/
 
+/*footer section start*/
 footer{
-  position: absolute;
-  bottom: -20vh;
+  position: relative;
+  bottom: 0;
   left: 0;
   right: 0;
-  border-radius: 10px 10px 0 0;
-  background: var(--light-color);
+  border-radius: 10px;
+  background: rgb(220, 170, 196);
   height: auto;
   width: 100%;
   padding-top: 40px;
@@ -475,67 +476,54 @@ footer{
 /*menu section end*/
 
 /* reservation section start */
-.form-container {
-  background-color: #f2f2f2;
-  padding: 20px;
-  border-radius: 5px;
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.form-label {
-  font-weight: bold;
+label {
+  font-size: 18px;
+  margin-bottom: 10px;
+  display: block;
 }
 
-.form-control {
-  border-radius: 0;
+.reserve-text {
+  margin-top: -1rem;
+  text-decoration: underline;
+  color: var(--light-color);
 }
 
-select[name="table_number"] {
-  padding: 8px 12px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  font-size: 16px;
-  color: #444;
-  background-color: #fff;
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+input[type="time"] {
   width: 100%;
-  max-width: 300px;
-}
-
-select[name="table_number"] option {
-  padding: 8px 12px;
-  font-size: 16px;
-  color: #444;
-  background-color: #fff;
-}
-
-select[name="table_number"]:focus {
-  outline: none;
-  border-color: #5B9DD9;
-  box-shadow: 0 0 3px #5B9DD9;
-}
-
-select.form-select {
-  padding: 8px 16px;
-  background-color: #f2f2f2;
-  font-size: 16px;
-  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 20px;
   border: 1px solid #ccc;
-  width: 100%;
+  border-radius: 4px;
 }
 
-
-.form-submit {
-  margin-top: 20px;
+button[type="submit"] {
   background-color: #007bff;
+  color: #fff;
   border: none;
-  border-radius: 5px;
-  color: white;
   padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.form-submit:hover {
-  background-color: #0069d9;
+button[type="submit"]:hover {
+  background-color: #0062cc;
 }
+
 
 /* reservation section start */
 

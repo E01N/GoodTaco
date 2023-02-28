@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="menu-header">
+  <h1>Please enter details again</h1>
+<form method="POST">
+  {% csrf_token %}
+  <label class="reserve-text" for="name">Name:</label>
+    <input type="text" name="name" required>
+
+  <br>
+
+  <label class="reserve-text" for="email">Email:</label>
+    <input type="email" name="email" required>
+
+  <br>
+  <label class="reserve-text" for="phone">Phone:</label>
+    <input type="tel" name="phone" required>
+
+  <br>
+
+  <label class="reserve-text" for="guests">Number of Guests:</label>
+    <input type="number" name="guests" min="1" max="10" required>
+
+  <br>
+
+  <label class="reserve-text" for="date">Date:</label>
+    <input type="date" name="date" required>
+    
+  <br>
+
+  <label class="reserve-text" for="time">Time:</label>
+    <input type="time" name="time" required>
+  <br>
+  <button class="menu-btn" type="submit">RESERVE</button>
+</form>
+{% endblock %}

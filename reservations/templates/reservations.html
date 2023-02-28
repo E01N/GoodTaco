@@ -3,7 +3,9 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
-  <h2>Make a Reservation</h2>
+  <div class="reservation-header">
+    <h1>Make a Reservation</h1>
+  </div>
   <form method="post" action="{% url 'make_reservation' %}">
     {% csrf_token %}
     {{ form|crispy }}

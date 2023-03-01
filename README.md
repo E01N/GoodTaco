@@ -2,7 +2,7 @@
 
  Good Taco is a site for a taco resturant. My aim for the site was for customers to get a feel for the resturant, view images, view the menu and reserve a table for a time and date.
 ---
-## [View the deployed website here!](https://e01n.github.io/Good-Taco/)
+## [View the deployed website here!]()
 ---
 ## Features 
 
@@ -53,5 +53,5 @@
   - From the source section drop-down menu, select the Master Branch
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-The live link can be found here - [https://e01n.github.io/Good-Taco/]
+The live link can be found here - []
 

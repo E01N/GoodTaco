@@ -1,6 +1,6 @@
 ## Good Taco
 
- Good Taco is a site for a taco resturant. My air for the site was for customers to get a feel for the resturant, view images, view the menu and reserve a table for a time and date.
+ Good Taco is a site for a taco resturant. My aim for the site was for customers to get a feel for the resturant, view images, view the menu and reserve a table for a time and date.
 ---
 ## [View the deployed website here!](https://e01n.github.io/Good-Taco/)
 ---
@@ -16,7 +16,7 @@
   - The navigation bar is situated at the top of all pages so the user can easily transition between sections and pages.
   - When clicked the user will be brought to the corresponding place.
 
-![Nav Bar](assets/images/Header.png)
+![Nav Bar](readme-media/Header.png)
 
 - __The About Section__
 
@@ -24,18 +24,18 @@
   - This section includes a photograph with a floating About section to give the user some basic information about the resturant. 
   - This section introduces the user to Good Taco with an eye-catching layout to grab the attention of the user.
 
-![About Section](assets/images/About.png)
+![About Section](readme-media/About.png)
 
 - __Gallery Page__
 
   - I created an interactive gallery with an video slider showing videos of food.
 
-![Gallery Secton](assets/images/Gallery.png)
+![Gallery Secton](readme-media/Gallery.png)
 
 - __Reservations Page__
 
   - The Reservation page gives the user the option to book a table at a said time and date and also the amout of people
-![Reservation Page](assets/images/Reservation.png)
+![Reservation Page](readme-media/reservations.png)
 
 - __The Footer__ 
 
@@ -43,17 +43,8 @@
   - The footer section includes links to the relevant social media sites. The links will open a new tab to the relevant link to allow easy navigation for the user. 
   - The footer is valuable to the user as it encourages them to keep connected via social media.
 
-![Footer](assets/images/Footer.png)
+![Footer](readme-media/Footer.png)
 
-
-### Features Left to Implement
-
-- I couldn't get the reservations app to work correctly as i was having huge difficulties with django
-
-
-### Unfixed Bugs
-
-- I have had major issues with using django for the reservations. I understand that this is a huge part of the project and simply ran out of time to fix the errors i was encountering
 
 ## Deployment
 
@@ -64,5 +55,3 @@
 
 The live link can be found here - [https://e01n.github.io/Good-Taco/]
 
-
-## Further Comments

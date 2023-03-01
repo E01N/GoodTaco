@@ -45,6 +45,13 @@
 
 ![Footer](readme-media/Footer.png)
 
+- __Admin__ 
+
+  - The user will have access to the admin page where they can edit or cancel reservations along eith the tables
+  - The Login details are Username + Password = admin
+
+![Admin](readme-media/admin.png)
+
 
 ## Deployment
 

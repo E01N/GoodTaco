@@ -1,1 +1,1 @@
-web: gunicorn good-taco.wsgi:application
+web: gunicorn goodtaco.wsgi:application 
